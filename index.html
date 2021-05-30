@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>electron app</title>
+        <link rel="stylesheet" href="./node_modules/simplemde/dist/simplemde.min.css">
+        <script src="./node_modules/simplemde/dist/simplemde.min.js"></script>
+        <style>
+          html, body {
+            height: 100%;
+            display:flex ;
+            flex-direction: column;
+          }
+          .codeMirror {
+            flex: 1;
+          }
+        </style>
+    </head>
+    <body>
+      <textarea name="" id="editor" cols="30" rows="10"> </textarea>
+      <script>
+        var editor = new SimpleMDE({
+          element:document.getElementById('editor')
+        })
+      </script>
+        
+    </body>
+</html>
